@@ -8,6 +8,12 @@ a{
 ul{
   list-style: none;
 }
+i{
+  font-style: normal;
+}
+body{
+  background: #fbf8f8;
+}
 /*html,body{*/
   /*overflow: hidden;*/
   /*height: 100%;*/
@@ -18,6 +24,7 @@ ul{
   position: fixed;
   width: 100%;
   background: #fff;
+  opacity: 0.9;
   border-bottom: 1px solid #e5e5e5;
   z-index: 2;
 }
@@ -50,7 +57,7 @@ ul{
 .nav-lists{
   display: flex;
   list-style: none;
-  margin-left: 100px;
+  margin-left: 50px;
   line-height: 65px;
 }
 .nav-lists .nav-list:nth-child(2) a{
@@ -79,7 +86,7 @@ ul{
 
 
 /* 轮播 */
-#wrap{
+#wraps{
   position: relative;
   top: 70px;
   width: 100%;
@@ -158,11 +165,11 @@ ul{
   position: relative;
   width: 180px;
   height: 422px;
-  z-index: 1;
+  z-index: 2;
 }
 .banner-items{
   position: absolute;
-  left: 200px;
+  left: 160px;
 
   width: 180px;
   height: 420px;
@@ -181,9 +188,35 @@ ul{
   text-align: center;
   color: white;
 }
+.lists li a .menu-img1{
+  position: absolute;
+  top: 17px;
+  margin-left: 15px;
+}
+/*.lists li a .menu-img2{*/
+  /*position: absolute;*/
+  /*left: 173px;*/
+  /*top: 17px;*/
+  /*display: none;*/
+/*}*/
 .lists li a:hover{
   background: gray;
 }
+.lists li .list-1{
+  position: absolute;
+  left: 180px;
+  top: 0;
+  width: 180px;
+  height: 420px;
+  margin: 0 auto;
+  background: white;
+  display: none;
+  text-align: center;
+  line-height: 42px;
+}
+
+
+
 
 
 /* more */
@@ -411,47 +444,245 @@ ul{
 }
 
 
-/* 第二页服务商 */
-.h2{
-  width: 1200px;
-  height: 85px;
-  font-weight: 600;
-  font-size: 18px;
-  margin: 0 auto;
-  padding-top: 85px;
-  line-height: 85px;
+/* 服务商 */
+.warp{
+  padding-top: 70px;
 }
-.service-center{
-  width: 100%;
-  float: left;
-}
-.service-left{
-  float: left;
-  width: 1200px;
-  height: 310px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-.services-lists{
-  width: 970px;
-  display: flex;
-}
-.services-lists li{
-  width: 230px;
-  height: 300px;
-  margin: 0 auto;
-  border: 1px solid lightgray;
-}
-.services-lists li>img{
-  width: 210px;
-  height: 210px;
-  margin: 10px;
-}
-.service-right img{
-  width: 230px;
-  height: 300px;
+.warp .nav h2 {
   display: block;
-  float: left;
-  margin-right:25px;
+  width: 1200px;
+  line-height: 85px;
+  margin: 0 auto;
 }
+.warp .nav h2 a {
+  color: #000;
+  font-weight: 700;
+}
+.warp .content-warp {
+  width: 80%;
+  display: flex;
+  margin: 0 160px 0 100px;
+}
+.warp .centerleft-left .left-top {
+  width: 960px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.warp .centerleft-left .left-top .left-top-left {
+  display: flex;
+}
+.warp .centerleft-left .left-top img {
+  width: 160px;
+  height: 160px;
+  margin: 30px;
+}
+.warp .centerleft-left .left-top .spm {
+  box-sizing: border-box;
+  margin: 10px 30px 30px 0;
+  padding-top: 30px;
+}
+.warp .centerleft-left .left-top span {
+  margin: 20px 0;
+}
+.warp .centerleft-left .left-top p {
+  margin: 20px 20px 20px 0;
+  font-size: 16px;
+}
+.warp .centerleft-left .left-top p span {
+  text-decoration: line-through;
+}
+.warp .centerleft-left .left-top p i {
+  color: #f00;
+  margin-right: 30px;
+}
+.warp .centerleft-left .left-top b {
+  font-size: 20px;
+  color: #f00;
+}
+.warp .centerleft-left .left-top .left-top-right {
+  text-align: center;
+}
+.warp .centerleft-left .left-top .left-top-right img {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 6px;
+}
+.warp .centerleft-left .left-top .left-top-right div {
+  font-size: 16px;
+}
+.warp .centerleft-left .left-top .left-top-right div i {
+  display: inline-block;
+  color: #f00;
+  margin: 15px 0;
+}
+.warp .content-warp .left-bottom {
+  background-color: #fff;
+  margin-left: 60px;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+.warp .title {
+  display: inline-block;
+  margin: 20px 30px;
+  height: 28px;
+  border-bottom: 3px #f00 solid;
+}
+.warp p {
+  margin-left: 50px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.warp .title-i {
+  margin: 0 0 20px 50px;
+  line-height: 50px;
+}
+.warp .color-i {
+  color: #f00;
+}
+.warp .title-wrap {
+  background-color: #fffcf1;
+}
+.warp .content-warp .centerleft-right {
+  margin-left: 15px;
+  width: 230px;
+}
+.warp .right-top {
+  width: 230px;
+  height: 356px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+.warp .right-top h3 {
+  line-height: 60px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.warp .right-top img {
+  text-align: center;
+  margin: 40px 75px;
+  margin-bottom: 10px;
+  width: 80px;
+}
+.warp .right-top span {
+  text-align: center;
+  display: inline-block;
+  width: 228px;
+  height: 36px;
+  font-weight: bold;
+}
+.warp .right-top p {
+  display: flex;
+  margin: 15px 10px;
+  justify-content: space-around;
+  color: #f00;
+}
+.warp .right-under {
+  width: 230px;
+  height: 290px;
+  text-align: center;
+  margin-top: 10px;
+  background-image: url("/images/dewm.png");
+  border: 1px ;
+}
+.warp .right-under img {
+  width: 130px;
+  height: 130px;
+  margin-top: 50px;
+}
+
+
+.baozhang {
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  background-color: #fff;
+}
+.baozhang ul{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.baozhang ul li{
+  margin-left: 20px;
+}
+.baozhang ul li img{
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+background-color white,
+h2 {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "微软雅黑";
+  margin: 15px;
+}
+background-color white span,
+h2 span {
+  font-weight: 800;
+  color: #f00;
+}
+p {
+  font-size: 22px;
+  color: #3d3838;
+  margin-bottom: 10px;
+}
+ul li {
+  display: inline-block;
+  color: #1d1515;
+  font-size: 18px;
+}
+.city {
+  position: relative;
+  background-color: #fff;
+  padding-top: 60px;
+}
+.city span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.city ul {
+  display: flex;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+}
+.partners {
+  position: relative;
+  padding-top: 60px;
+}
+.partners span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.partners ul {
+  display: flex;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  justify-content: space-around;
+  text-align: center;
+}
+.partners ul li {
+  width: 10%;
+  height: 60px;
+  background-color: #fff;
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+.partners ul img {
+  width: 100px;
+}
+.partners p {
+  text-align: center;
+  font-size: 14px;
+}
+
